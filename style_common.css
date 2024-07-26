@@ -1,0 +1,61 @@
+body{
+    font-family: 'Josefin Sans';
+    color: white;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.waitlist-trigger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.waitlist-trigger__button{
+    background-color: #FFFFFF;
+    font-family: 'Josefin Sans';
+    border-color: transparent;
+    font-size: clamp(0.1rem, 4.2vw, 4.2vw);
+    font-weight: 700;
+    padding: 6vw 0vw;
+    color: #0B3E13;
+    width: 58vw;
+    border-radius: 0.9vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.waitlist-trigger__text{
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 14vw;
+}
+
+.waitlist-trigger__schedule-title{
+    font-size: clamp(0.1rem, 3.5vw, 3.5vw);
+    
+
+}
+
+.waitlist-trigger__schedule-prevision{
+    font-size: clamp(0.1rem, 3.5vw, 3.5vw);
+}

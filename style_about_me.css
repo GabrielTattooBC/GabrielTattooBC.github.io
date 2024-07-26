@@ -1,0 +1,59 @@
+.section-about-me{
+    display: flex;
+    flex-direction: column;
+    background-color: #06280E;
+    box-shadow: inset 0vw 40vw 10vw black;
+    align-items: center;
+    gap: 2vw;
+}
+
+.section-about-me__title{
+    padding-top: 25vw;
+    font-weight: 500;
+    letter-spacing: 0.6vw;
+    padding-bottom: 10vw;
+    font-size: clamp(0.1rem, 9vw, 9vw);
+}
+
+.section-about-me__subtitle{
+    font-weight: 100;
+    font-size: clamp(0.1rem, 4vw, 4vw);
+    padding-bottom: 5vw;
+    letter-spacing: 0.6vw;
+}
+
+.section-about-me__info{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    padding-top: 10vw;
+    align-items: center;
+    padding-bottom: 8vw;
+}
+
+.section-about-me__info-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4vw;
+    background-color: #264233;
+    padding: 6.5vw 3vw;
+    height: 65vw;
+}
+
+.section-about-me__info-title{
+   padding-bottom:6vw ;
+   font-size: clamp(0.1rem, 5vw, 5vw);
+   font-weight: 600;
+   letter-spacing: 0.6vw;
+}
+
+.section-about-me__info-text{
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.1rem, 4.5vw, 4.5vw);
+    gap: 5vw;
+    font-weight: 400;
+    line-height: 5vw;
+}

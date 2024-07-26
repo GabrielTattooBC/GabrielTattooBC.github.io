@@ -1,0 +1,53 @@
+.section-home{
+    display: flex;
+    align-items: center;
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(images/paulo_home.png);
+    background-color: black;
+    flex-direction: column;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right right;
+    background-attachment: fixed;
+    box-shadow: inset 0vw -50vw 30vw #000000;
+    gap: 2vw;
+}
+
+.section-home__header{
+    padding-bottom: 80vw;
+    padding-top: 5vw;
+    font-size: clamp(0.1rem, 3.5vw, 3.5vw);
+}
+
+.section-home__introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.section-home__title{
+    font-weight: 400;
+    font-size: clamp(0.1rem, 9vw, 9vw);
+}
+
+.section-home__description{
+    font-weight: 200;
+    font-size: clamp(0.1rem, 6vw, 6vw);
+    padding-bottom: 5vw;
+}
+
+.section-home__punchline{
+    font-weight: 400;
+    font-size: clamp(0.1rem, 8vw, 8vw);
+    text-align: justify;
+    word-break: normal;
+    padding-bottom: 0.3vw;
+}
+
+.section-home__continue-button{
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    size: 20vw;
+    padding: 0vw 0vw;
+}
