@@ -59,3 +59,9 @@ a{
 .waitlist-trigger__schedule-prevision{
     font-size: clamp(0.1rem, 3.5vw, 3.5vw);
 }
+
+.white-line{
+    background-color: white;
+    height: 0.5vw;
+    width: 100%;
+}

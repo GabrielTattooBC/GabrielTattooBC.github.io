@@ -1,0 +1,50 @@
+.section-studio{
+    display: flex;
+    flex-direction: column;
+    background-color: #06280E;
+    align-items: center;
+    gap: 8vw;
+}
+
+.section-studio__title{
+    padding-top: 5vw;
+    font-weight: 500;
+    letter-spacing: 0.6vw;
+    font-size: clamp(0.1rem, 9vw, 9vw);
+}
+
+.section-studio__grid{
+    display: grid;
+    grid-template-columns: repeat(1, 0vw);
+    grid-template-areas: "studio1 studio2 studio3 studio4";
+    gap: 1vw;
+    width: 100%;
+}
+
+.section-studio__image1{
+    grid-area: studio1;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-studio__image2{
+    grid-area: studio2;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-studio__image3{
+    grid-area: studio3;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-studio__image4{
+    grid-area: studio4;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
