@@ -31,15 +31,48 @@
     padding-bottom: 8vw;
 }
 
-.section-about-me__info-block{
+.section-about-me__experience, .section-about-me__drawing,
+ .section-about-me__material, .section-about-me__procedure{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 4vw;
     background-color: #264233;
+    background-repeat: no-repeat;
     padding: 6.5vw 3vw;
     height: 65vw;
+}
+
+.section-about-me__experience{
+    background-image: url(images/tatoo_machine.png);
+    background-position-y: -12vw;
+    background-size: 100%;
+}
+
+.section-about-me__drawing{
+    background-image: url(images/ink_pen.png);
+    background-position-y: 4vw;
+    background-size: 100%;
+}
+
+.section-about-me__material{
+    background-image: url(images/plane.png);
+    background-position-y: 3.5vw;
+    background-position-x: 6vw;
+    background-size: 85%;
+}
+
+.section-about-me__procedure{
+    background-image: url(images/mask.png);
+    background-position-y: -10vw;
+    background-position-x: 6vw;
+    background-size: 85%;
+}
+
+.section-about-me__info-image{
+    z-index: -1;
+    position: center;
 }
 
 .section-about-me__info-title{
