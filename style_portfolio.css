@@ -42,7 +42,7 @@
 .section-portfolio__info-text{
     display: flex;
     flex-direction: column;
-    font-size: clamp(0.1rem, 4.5vw, 4.5vw);
+    font-size: clamp(0.1rem, 4vw, 4vw);
     gap: 5vw;
     font-weight: 350;
     line-height: 5vw;
