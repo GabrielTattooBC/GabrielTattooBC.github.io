@@ -3,7 +3,9 @@
     flex-direction: column;
     background-color: #06280E;
     align-items: center;
-    gap: 8vw;
+    gap: 12vw;
+    box-shadow: inset 0vw 0vw 10vw black;
+    padding-bottom: 8vw;
 }
 
 .section-studio__title{
@@ -47,4 +49,29 @@
     object-fit: cover;
     width: 100%;
     height: auto;
+}
+
+.section-studio__address{
+    display: flex;
+    flex-direction: line;
+    justify-content:space-between;
+    background-color: #264233;
+    width: 100%;
+}
+
+.section-studio__address-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.3vw;
+    align-self: center;
+    font-size: clamp(0.1rem, 4vw, 4vw);
+    position: absolute;
+    padding: 7vw 6.3vw;
+}
+
+.section-studio__address-icon{
+    padding: 1vw 4vw;
+    width: 22vw;
 }

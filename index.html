@@ -11,6 +11,7 @@
     <link rel = "stylesheet" href = "style_home.css" >
     <link rel = "stylesheet" href = "style_about_me.css" >
     <link rel = "stylesheet" href = "style_studio.css" >
+    <link rel="stylesheet" href="style_portfolio.css">
     <title>Landing Page</title>
 </head>
 <body>
@@ -101,37 +102,52 @@
             <img id = "studio-4" class = "section-studio__image4" src = "studio_images/studio4.jpg">
         </figure>
         <div class="section-studio__address">
-            <p>BALNEÁRIO CAMBORIÚ - SC</p>
-            <p>RUA 2000, EDIFÍCIO IMPERATRIZ</p>
-            <p>ACIMA DO RESTAURANTE "O PHAROL"</p>
+            <img class="section-studio__address-icon" src="images/local_marker.png">
+            <div class="section-studio__address-text">
+                <p>BALNEÁRIO CAMBORIÚ - SC</p>
+                <p>RUA 2000, EDIFÍCIO IMPERATRIZ</p>
+                <p>ACIMA DO RESTAURANTE "O PHAROL"</p>
+            </div>
+            <img class="section-studio__address-icon" src="images/local_marker.png">
         </div>
         <div class="waitlist-trigger">
             <button class="waitlist-trigger__button">Quero me tatuar aqui</button>
-            <p class="waitlist-trigger__schedule-title">Cadastre-se para a lista de espera</p>
-            <p class="waitlist-trigger__schedule-prevision">*Previsão da Agenda: Junho 2024</p>
+            <div class="waitlist-trigger__text">
+                <p class="waitlist-trigger__schedule-title">Cadastre-se para a lista de espera</p>
+                <p class="waitlist-trigger__schedule-prevision">*Previsão da Agenda: Junho 2024</p>
+            </div>
         </div>
     </section>
 
     <section id = "portfolio" class="section-portfolio">
-        <h1>CRIANDO A OBRA</h1>
-        <div class="section-portfolio__info-block">
+        <hr class="white-line">
+        <h1 class="section-portfolio__title">CRIANDO A OBRA</h1>
+        <div class="section-portfolio__info">
             <div class="section-portfolio__info-block">
                 <h4 class="section-portfolio__info-title">A ENTREVISTA</h4>
-                <p>Faremos uma breve entrevista(presencial ou online), para que possamos alinhar o que você quer tatuar,
+                <p class="section-portfolio__info-text">
+                    Faremos uma breve entrevista(presencial ou online), para que possamos alinhar o que você quer tatuar,
                     o significado que deseja carregar com você. Uma breve conversa para que eu possa conhecer você e 
                     vice-versa.
                 </p>
+            </div>
+            <div class="section-portfolio__info-block">
                 <h4 class="section-portfolio__info-title">CRIAÇÃO DA OBRA</h4>
-                <p>A criação do desenho leva em média uma semana, pois trabalho com calma na sua obra, dando atenção a
+                <p class="section-portfolio__info-text">
+                    A criação do desenho leva em média uma semana, pois trabalho com calma na sua obra, dando atenção a
                     cada mínimo detalhe e significado dela, assim garantindo um resultado satisfatório, exemplar e exclusivo.
                 </p>
+            </div>
+            <div class="section-portfolio__info-block">
                 <h4 class="section-portfolio__info-title">ACOMPANHAMENTO PÓS</h4>
-                <p>Você irá ganhar um acompanhamento prioritário, onde mando mensagem periodicamente para lhe auxiliar
+                <p class="section-portfolio__info-text">
+                    Você irá ganhar um acompanhamento prioritário, onde mando mensagem periodicamente para lhe auxiliar
                     no processo de cicatrização da sua tatuagem, tirando dúvidas e guiando. Isso é apenas um capricho
                     meu, um amor pela arte que estou realizando.
                 </p>
             </div>
         </div>
+        <hr class="white-line">
         <figure class="section-portfolio__grid">
             colocar imagens aqui
         </figure>

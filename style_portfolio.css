@@ -1,0 +1,51 @@
+.section-portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0vw 0vw 10vw black;
+    background-color: black;
+    gap: 12vw;
+}
+
+.section-portfolio__title{
+    padding-top: 2vw;
+    font-weight: 500;
+    letter-spacing: 0.6vw;
+    font-size: clamp(0.1rem, 9vw, 9vw);
+}
+
+.section-portfolio__info{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    align-items: center;
+}
+
+.section-portfolio__info-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #264233;
+    background-color: transparent(0.5);
+    height: 55vw;
+}
+
+.section-portfolio__info-title{
+    padding-bottom:6vw ;
+    font-size: clamp(0.1rem, 5vw, 5vw);
+    font-weight: 600;
+    letter-spacing: 0.6vw;
+    padding-top: 5vw;
+}
+
+.section-portfolio__info-text{
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.1rem, 4.5vw, 4.5vw);
+    gap: 5vw;
+    font-weight: 350;
+    line-height: 5vw;
+    letter-spacing: 0.4vw;
+    padding-inline: 2vw;
+}
