@@ -12,6 +12,7 @@
     <link rel = "stylesheet" href = "style_about_me.css" >
     <link rel = "stylesheet" href = "style_studio.css" >
     <link rel="stylesheet" href="style_portfolio.css">
+    <link rel="stylesheet" href="style_contact.css">
     <title>Landing Page</title>
 </head>
 <body>
@@ -149,72 +150,117 @@
         </div>
         <hr class="white-line">
         <figure class="section-portfolio__grid">
-            colocar imagens aqui
+            <img id = "portfolio-1" class = "section-portfolio__image1" src = "portoflio_images/portfolio1.jpg">
+            <img id = "portfolio-2" class = "section-portfolio__image2" src = "portoflio_images/portfolio2.jpg">
+            <img id = "portfolio-3" class = "section-portfolio__image3" src = "portoflio_images/portfolio3.jpg">
+            <img id = "portfolio-4" class = "section-portfolio__image4" src = "portoflio_images/portfolio4.jpg">
+            <img id = "portfolio-5" class = "section-portfolio__image5" src = "portoflio_images/portfolio5.jpg">
+            <img id = "portfolio-6" class = "section-portfolio__image6" src = "portoflio_images/portfolio6.jpg">
+            <img id = "portfolio-7" class = "section-portfolio__image7" src = "portoflio_images/portfolio7.jpg">
         </figure>
     </section>
 
+    <hr class="white-line">
+
     <section id = "contact" class="section-contact">
-        <div class="section-contact__container">
-            <h1>PREENCHA OS CAMPOS PARA TATUAR COMIGO</h1>
+        <div class="section-contact__container-1">
+            <h1 class="section-contact__title">PREENCHA OS CAMPOS PARA TATUAR COMIGO</h1>
             <div class="section-contact__input-container">
                 <h5>Qual é o seu nome?</h5>
-                <input type="text" placeholder="Nome Completo">
+                <input class="section-contact__input" type="text" placeholder="Nome Completo">
             </div>
         </div>
-        <div class="section-contact__container">
-            <h5>Vou entrar em contato via WhatsApp. Qual é o seu número?</h5>
-            <input type="text" placeholder="Número">
+        <hr class="white-line">
+        <div class="section-contact__container-2">
+            <h5 class="section-contact__container-2-title">Vou entrar em contato via WhatsApp. Qual é o seu número?</h5>
+            <input class="section-contact__input" type="text" placeholder="Número">
         </div>
-        <div class="section-contact__container">
-            <h5>Quais desses conceitos fazem mais sentido para você transformar em uma tatuagem?(Não é obrigatório)</h5>
+        <hr class="white-line">
+        <div class="section-contact__container-3">
+            <h5 class="section-contact__container-3-title">Quais desses conceitos fazem mais sentido para você transformar em uma tatuagem?(Não é obrigatório)</h5>
         
             <div class="section-contact__checkbox-container">
-                <input type="checkbox" name="conceito-1" value="Personalidade ou Estilo de Vida">
-                <label for="conceito-1">Expressão da sua personalidade ou estilo de vida.</label>
-                <input type="checkbox" name="conceito-2" value="Sentimentos">
-                <label for="conceito-2">Expressão de sentimentos por algo ou alguém.</label>
-                <input type="checkbox" name="conceito-3" value="Habilidade">
-                <label for="conceito-3">Conexão com alguma habilidade.</label>
-                <input type="checkbox" name="conceito-4" value="Conhecimento">
-                <label for="conceito-4">Conexão com alguma área de conhecimento.</label>
-                <input type="checkbox" name="conceito-5" value="Filosofia">
-                <label for="conceito-5">Filosofias e pensamentos que te inspiram.</label>
-                <input type="checkbox" name="conceito-6" value="Espiritualidade">
-                <label for="conceito-6">Espiritualidade e conexões transcendentais.</label>
-                <input type="checkbox" name="conceito-7" value="Conquista ou Experiência">
-                <label for="conceito-7">Reflexões sobre a vida. Alguma conquista ou experiência.</label>
-                <input type="checkbox" name="conceito-8" value="Aspiração">
-                <label for="conceito-8">Suas aspirações.</label>
-                <input type="checkbox" name="conceito-9" value="Cultura ou História">
-                <label for="conceito-9">Admiração por alguma cultura ou acontecimento histórico.</label>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="conceito-1" value="Personalidade ou Estilo de Vida">
+                    <label class="section-contact__checkbox-container-text" for="conceito-1">Expressão da sua personalidade ou estilo de vida.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="conceito-2" value="Sentimentos">
+                    <label class="section-contact__checkbox-container-text" for="conceito-2">Expressão de sentimentos por algo ou alguém.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="conceito-3" value="Habilidade">
+                    <label class="section-contact__checkbox-container-text" for="conceito-3">Conexão com alguma habilidade.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="conceito-4" value="Conhecimento">
+                    <label class="section-contact__checkbox-container-text" for="conceito-4">Conexão com alguma área de conhecimento.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="conceito-5" value="Filosofia">
+                    <label class="section-contact__checkbox-container-text" for="conceito-5">Filosofias e pensamentos que te inspiram.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="conceito-6" value="Espiritualidade">
+                    <label class="section-contact__checkbox-container-text" for="conceito-6">Espiritualidade e conexões transcendentais.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="conceito-7" value="Conquista ou Experiência">
+                    <label class="section-contact__checkbox-container-text" for="conceito-7">Reflexões sobre a vida. Alguma conquista ou experiência.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="conceito-8" value="Aspiração">
+                    <label class="section-contact__checkbox-container-text" for="conceito-8">Suas aspirações.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="conceito-9" value="Cultura ou História">
+                    <label class="section-contact__checkbox-container-text" for="conceito-9">Admiração por alguma cultura ou acontecimento histórico.</label>
+                </div>
             </div>
             
             <div class="section-contact__input-container">
                 <h5>Outro Conceito:</h5>
-                <input type="text" placeholder="Conceito">
+                <input class="section-contact__input" type="text" placeholder="Conceito">
             </div>
         </div>
-        <div class="section-contact__container">
+        <hr class="white-line">
+        <div class="section-contact__container-4">
             <h3>Qual é o local do corpo/tamanho que pretende para sua tatuagem?</h3>
             <h3>*O preço varia conforme o tamanho e complexidade da arte. </h3>
             <h3>*O pagamento pode ser realizado via PIX ou no cartão de crédito em até 12x.</h3>
             <div class="section-contact__checkbox-container">
-                <input type="checkbox" name="local-1" value="Antebraço">
-                <label for="local-1">Antebraço externo ou interno: de R$1600,00 a R$3000,00.</label>
-                <input type="checkbox" name="local-2" value="Braço Superior">
-                <label for="local-2">Braço superior externo: de R$ 2.000,00 a R$3.500,00.</label>
-                <input type="checkbox" name="local-3" value="Braço Completo">
-                <label for="local-3">Braço completo externo: de R$5.000,00 a R$8.000,00</label>
-                <input type="checkbox" name="local-4" value="Panturrilha">
-                <label for="local-4">Panturrilha: de R$1.600,00 a R$R$3.000,00</label>
-                <input type="checkbox" name="local-5" value="Coxa">
-                <label for="local-5">Coxa: de R$2.500,00 a R$4.000,00.</label>
-                <input type="checkbox" name="local-6" value="Peito">
-                <label for="local-6">Peito: de R$2.500,00 a R$4.000,00.</label>
-                <input type="checkbox" name="local-7" value="Costas">
-                <label for="local-7">Costas: de R$6.000,00 a R$12.000,00.</label>
-                <input type="checkbox" name="local-8" value="Outro">
-                <label for="local-8">Outros Locais(Requer Avaliação)</label>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="local-1" value="Antebraço">
+                    <label class="section-contact__checkbox-container-text" for="local-1">Antebraço externo ou interno: de R$1600,00 a R$3000,00.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="local-2" value="Braço Superior">
+                    <label class="section-contact__checkbox-container-text" for="local-2">Braço superior externo: de R$ 2.000,00 a R$3.500,00.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="local-3" value="Braço Completo">
+                    <label class="section-contact__checkbox-container-text" for="local-3">Braço completo externo: de R$5.000,00 a R$8.000,00</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="local-4" value="Panturrilha">
+                    <label class="section-contact__checkbox-container-text" for="local-4">Panturrilha: de R$1.600,00 a R$R$3.000,00</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="local-5" value="Coxa">
+                    <label class="section-contact__checkbox-container-text" for="local-5">Coxa: de R$2.500,00 a R$4.000,00.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="local-6" value="Peito">
+                    <label class="section-contact__checkbox-container-text" for="local-6">Peito: de R$2.500,00 a R$4.000,00.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="local-7" value="Costas">
+                    <label class="section-contact__checkbox-container-text" for="local-7">Costas: de R$6.000,00 a R$12.000,00.</label>
+                </div>
+                <div class="section-contact__checkbox-container-item">
+                    <input class="section-contact__checkbox-container-input" type="checkbox" name="local-8" value="Outro">
+                    <label class="section-contact__checkbox-container-text" for="local-8">Outros Locais(Requer Avaliação)</label>
+                </div>
             </div>
             <button class="section-contact__form-button">Enviar</button>
             <h5>Acesse meu Instagram</h5>
@@ -223,8 +269,6 @@
             </button>
         </div>
     </section>
-
-
 
 </body>
 </html>

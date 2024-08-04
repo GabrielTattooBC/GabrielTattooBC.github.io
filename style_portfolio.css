@@ -49,3 +49,57 @@
     letter-spacing: 0.4vw;
     padding-inline: 2vw;
 }
+
+.section-portfolio__grid{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5vw;
+    width: 100%;
+    grid-auto-columns: 100vw;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 12vw;
+}
+
+
+.section-portfolio__image1{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-portfolio__image2{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-portfolio__image3{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-portfolio__image4{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-portfolio__image5{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-portfolio__image6{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-portfolio__image7{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}

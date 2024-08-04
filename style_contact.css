@@ -1,0 +1,121 @@
+.section-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0vw 0vw 10vw black;
+    background-color: #06280E;
+}
+
+.section-contact__container-1{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    background-color: #264233;
+    padding: 12vw 0vw;
+    background-image: url("images/info_symbol.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 55vw;
+}
+
+.section-contact__title{
+    font-weight: 700;
+    letter-spacing: 0.6vw;
+    font-size: clamp(0.1rem, 6vw, 6vw);
+    text-align: center;
+    line-height: 7vw;
+    padding-bottom: 8vw;
+}
+
+.section-contact__input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4vw;
+    font-size: clamp(0.1rem, 6vw, 6vw);
+    align-self: center;
+}
+
+.section-contact__input{
+    border-radius: 10vw;
+    width: 85vw;
+    padding: 2vw 3vw;
+    font-size: clamp(0.1rem, 3vw, 3vw);
+    font-weight: 700;
+    border: none;
+}
+
+.section-contact__container-2{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    padding: 12vw 0vw;
+    align-items: center;
+    background-image: url("images/whatsapp_symbol.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 40vw;
+}
+
+.section-contact__container-2-title{
+    font-size: clamp(0.1rem, 4vw, 4vw);
+    font-weight: 600;
+    text-align: left;
+    padding-inline: 8vw;
+}
+
+.section-contact__container-3{
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+    padding: 12vw 8vw;
+    align-items: center;
+    background-color: #264233;
+}
+
+.section-contact__container-3-title{
+    font-size: clamp(0.1rem, 4.7vw, 4.7vw);
+    font-weight: 600;
+    text-align: left;
+}
+
+.section-contact__checkbox-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+    font-size: clamp(0.1rem, 4vw, 4vw);
+    font-weight: 300;
+}
+
+.section-contact__checkbox-container-item{
+    display: flex;
+    gap: 5vw;
+}
+
+.section-contact__checkbox-container-text{
+    padding-inline-start: 14vw;
+}
+
+.section-contact__checkbox-container-input{
+    appearance: none;
+    background-color: white;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 100%;
+    position:absolute;
+    cursor: pointer;
+}
+
+.section-contact__checkbox-container-input:checked{
+    background-color: black;
+}
+
+.section-contact__container-4{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    padding: 12vw 8vw;
+    align-items: center;
+}
