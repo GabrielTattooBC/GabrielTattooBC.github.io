@@ -44,10 +44,9 @@
     padding-bottom: 0.3vw;
 }
 
-.section-home__continue-button{
+.section-home__chevron-down{
+    font-size: clamp(0.1rem, 7vw, 7vw);
     color: white;
     background-color: transparent;
     border: transparent;
-    size: 20vw;
-    padding: 0vw 0vw;
 }

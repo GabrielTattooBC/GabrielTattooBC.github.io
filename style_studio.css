@@ -17,35 +17,45 @@
 
 .section-studio__grid{
     display: grid;
-    grid-template-columns: repeat(1, 0vw);
-    grid-template-areas: "studio1 studio2 studio3 studio4";
-    gap: 1vw;
+    grid-auto-flow: column;
+    grid-auto-columns: 100vw;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 5vw;
     width: 100%;
 }
 
 .section-studio__image1{
-    grid-area: studio1;
     object-fit: cover;
     width: 100%;
     height: auto;
 }
 
 .section-studio__image2{
-    grid-area: studio2;
     object-fit: cover;
     width: 100%;
     height: auto;
 }
 
 .section-studio__image3{
-    grid-area: studio3;
     object-fit: cover;
     width: 100%;
     height: auto;
 }
 
 .section-studio__image4{
-    grid-area: studio4;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-studio__image5{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-studio__image6{
     object-fit: cover;
     width: 100%;
     height: auto;
