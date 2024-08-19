@@ -17,7 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentIndex = numImages;
 
-    grid.scrollLeft = currentIndex * scrollAmount;
+    // Function to disable smooth scroll temporarily
+    const disableSmoothScroll = () => {
+        grid.style.scrollBehavior = "auto";
+    };
+
+    // Function to enable smooth scroll back
+    const enableSmoothScroll = () => {
+        grid.style.scrollBehavior = "smooth";
+    };
 
     const updateIndicators = () => {
         indicators.forEach((indicator, index) => {
@@ -30,15 +38,23 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const scrollHandler = () => {
-        if (grid.scrollLeft >= (totalImages - numImages) * scrollAmount) {
+        const maxScrollLeft = (totalImages - numImages) * scrollAmount;
+
+        if (grid.scrollLeft >= maxScrollLeft) {
+            disableSmoothScroll();
             grid.scrollLeft = currentIndex * scrollAmount;
+            enableSmoothScroll();
         } else if (grid.scrollLeft <= 0) {
+            disableSmoothScroll();
             grid.scrollLeft = (totalImages - 2 * numImages) * scrollAmount;
+            enableSmoothScroll();
         }
 
         currentIndex = Math.round(grid.scrollLeft / scrollAmount) % numImages;
         updateIndicators();
     };
+
+    grid.scrollLeft = currentIndex * scrollAmount;
 
     grid.addEventListener("scroll", scrollHandler);
 
