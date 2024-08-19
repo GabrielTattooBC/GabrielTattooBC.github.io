@@ -32,11 +32,11 @@
 }
 
 .indicator {
-    width: 10px;
-    height: 10px;
+    width: 3vw;
+    height: 3vw;
     background-color: white;
     border-radius: 50%;
-    margin: 0 5px;
+    margin: 0 1.5vw;
     transition: background-color 0.3s;
 }
 
