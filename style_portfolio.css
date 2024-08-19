@@ -5,6 +5,7 @@
     box-shadow: inset 0vw 0vw 10vw black;
     background-color: #06280E;
     gap: 12vw;
+    padding-bottom: 12vw;
 }
 
 .section-portfolio__background-1{
@@ -68,7 +69,6 @@
     grid-auto-columns: 100vw;
     overflow-x: auto;
     white-space: nowrap;
-    padding-bottom: 12vw;
 }
 
 

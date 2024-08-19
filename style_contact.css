@@ -110,7 +110,20 @@
 }
 
 .section-contact__checkbox-container-input:checked{
-    background-color: black;
+    background-color: white;
+}
+
+.section-contact__checkbox-container-input:checked::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(88, 85, 85);
+    border-radius: 50%; 
+    width: 5vw;
+    height: 5vw;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
 }
 
 .section-contact__container-4{
