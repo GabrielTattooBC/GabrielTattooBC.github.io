@@ -1,6 +1,8 @@
 body{
     font-family: 'Josefin Sans';
     color: white;
+    background-color: #06280E; 
+    /* background color é para disfarçar a linha branca a direita da tela, achar solução */
 }
 
 
