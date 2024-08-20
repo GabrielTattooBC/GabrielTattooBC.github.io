@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     gap: 5vw;
-    /* background-color: #264233; */
+    background-color: #264233;
     padding: 12vw 0vw;
     background-image: url("images/info_symbol.png");
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@
     gap: 8vw;
     padding: 12vw 8vw;
     align-items: center;
-    /* background-color: #264233; */
+    background-color: #264233;
 }
 
 .section-contact__container-3-title{
