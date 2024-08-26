@@ -65,50 +65,33 @@
     display: grid;
     grid-auto-flow: column;
     gap: 5vw;
-    width: 100%;
+    width: 95%;
     grid-auto-columns: 100vw;
     overflow-x: auto;
     white-space: nowrap;
 }
 
-
-.section-portfolio__image1{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
+.section-portfolio__indicator-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
 }
 
-.section-portfolio__image2{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
+.section-portfolio__indicator {
+    width: 3vw;
+    height: 3vw;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    cursor: pointer
 }
 
-.section-portfolio__image3{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
+.section-portfolio__indicator.active {
+    background-color: lightgreen;
 }
 
-.section-portfolio__image4{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
 
-.section-portfolio__image5{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-
-.section-portfolio__image6{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-
-.section-portfolio__image7{
+.section-portfolio__image{
     object-fit: cover;
     width: 100%;
     height: auto;

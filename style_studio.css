@@ -22,59 +22,29 @@
     overflow-x: auto;
     white-space: nowrap;
     gap: 5vw;
-    width: 100%;
+    width: 95%;
 }
 
-.indicator-container {
+.section-studio__indicator-container {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    gap: 1.5vw;
 }
 
-.indicator {
+.section-studio__indicator {
     width: 3vw;
     height: 3vw;
     background-color: white;
     border-radius: 50%;
-    margin: 0 1.5vw;
     transition: background-color 0.3s;
+    cursor: pointer
 }
 
-.indicator.active {
+.section-studio__indicator.active {
     background-color: lightgreen;
 }
 
-.section-studio__image1{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-
-.section-studio__image2{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-
-.section-studio__image3{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-
-.section-studio__image4{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-
-.section-studio__image5{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-
-.section-studio__image6{
+.section-studio__image{
     object-fit: cover;
     width: 100%;
     height: auto;

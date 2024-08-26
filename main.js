@@ -1,62 +1,42 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const grid = document.querySelector(".section-studio__grid");
-    const indicators = document.querySelectorAll(".indicator");
-    const images = Array.from(grid.children);
-    const numImages = images.length;
+    const updateIndicatorsForGrid = (grid, indicators) => {
+        const images = Array.from(grid.children);
+        const numImages = images.length;
 
-    // Clone images for infinite scroll effect
-    images.forEach(image => {
-        const cloneBefore = image.cloneNode(true);
-        const cloneAfter = image.cloneNode(true);
-        grid.insertBefore(cloneBefore, grid.firstChild);
-        grid.appendChild(cloneAfter);
-    });
+        const updateIndicators = () => {
+            const scrollLeft = grid.scrollLeft;
+            const viewportWidth = grid.clientWidth;
+            
+            let currentIndex = Math.round(scrollLeft / viewportWidth);
 
-    const totalImages = grid.children.length;
-    const scrollAmount = grid.clientWidth;
-
-    let currentIndex = numImages;
-
-    // Function to disable smooth scroll temporarily
-    const disableSmoothScroll = () => {
-        grid.style.scrollBehavior = "auto";
-    };
-
-    // Function to enable smooth scroll back
-    const enableSmoothScroll = () => {
-        grid.style.scrollBehavior = "smooth";
-    };
-
-    const updateIndicators = () => {
-        indicators.forEach((indicator, index) => {
-            if (index === currentIndex % numImages) {
-                indicator.classList.add("active");
-            } else {
-                indicator.classList.remove("active");
+            // Limitar o índice ao número de imagens
+            if (currentIndex >= numImages) {
+                currentIndex = numImages - 1;
             }
-        });
-    };
 
-    const scrollHandler = () => {
-        const maxScrollLeft = (totalImages - numImages) * scrollAmount;
+            indicators.forEach((indicator, index) => {
+                if (index === currentIndex) {
+                    indicator.classList.add("active");
+                } else {
+                    indicator.classList.remove("active");
+                }
+            });
+        };
 
-        if (grid.scrollLeft >= maxScrollLeft) {
-            disableSmoothScroll();
-            grid.scrollLeft = currentIndex * scrollAmount;
-            enableSmoothScroll();
-        } else if (grid.scrollLeft <= 0) {
-            disableSmoothScroll();
-            grid.scrollLeft = (totalImages - 2 * numImages) * scrollAmount;
-            enableSmoothScroll();
-        }
+        grid.addEventListener("scroll", updateIndicators);
 
-        currentIndex = Math.round(grid.scrollLeft / scrollAmount) % numImages;
+        // Inicializa os indicadores
         updateIndicators();
     };
 
-    grid.scrollLeft = currentIndex * scrollAmount;
+    // Seleciona os grids e os indicadores correspondentes
+    const studioGrid = document.querySelector(".section-studio__grid");
+    const studioIndicators = document.querySelectorAll(".section-studio__indicator");
 
-    grid.addEventListener("scroll", scrollHandler);
+    const portfolioGrid = document.querySelector(".section-portfolio__grid");
+    const portfolioIndicators = document.querySelectorAll(".section-portfolio__indicator");
 
-    updateIndicators();
+    // Atualiza os indicadores para cada grid
+    updateIndicatorsForGrid(studioGrid, studioIndicators);
+    updateIndicatorsForGrid(portfolioGrid, portfolioIndicators);
 });
