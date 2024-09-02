@@ -66,8 +66,7 @@
 }
 
 .section-contact__container-2-title{
-    font-size: clamp(0.1rem, 4.8vw, 4.8
-    vw);
+    font-size: clamp(0.1rem, 4.8vw, 4.8vw);
     font-weight: 600;
     text-align: left;
     padding-inline: 8vw;
@@ -176,4 +175,5 @@
     color: white;
     background-color: transparent;
     border: transparent;
+    cursor: pointer;
 }

@@ -39,4 +39,34 @@ document.addEventListener("DOMContentLoaded", () => {
     // Atualiza os indicadores para cada grid
     updateIndicatorsForGrid(studioGrid, studioIndicators);
     updateIndicatorsForGrid(portfolioGrid, portfolioIndicators);
+    validateContainer4Checkboxes();
 });
+
+function validateContainer4Checkboxes() {
+    var container4Checkboxes = document.querySelectorAll('.section-contact__container-4 .section-contact__checkbox-container-input');
+
+    function updateRequiredAttributes() {
+        if (isAnyCheckboxChecked()) {
+            container4Checkboxes.forEach(function(checkbox) {
+                checkbox.removeAttribute('required');
+            });
+        } else {
+            container4Checkboxes.forEach(function(checkbox) {
+                checkbox.setAttribute('required', 'required');
+            });
+        }
+    }
+
+    function isAnyCheckboxChecked() {
+        return Array.from(container4Checkboxes).some(function(checkbox) {
+            return checkbox.checked;
+        });
+    }
+
+    updateRequiredAttributes();
+
+    container4Checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', updateRequiredAttributes);
+    });
+}
+
