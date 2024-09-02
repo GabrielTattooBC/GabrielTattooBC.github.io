@@ -1,0 +1,39 @@
+.body, html{
+    box-shadow: inset 0vw 0vw 10vw black;
+}
+
+.section-thanks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #06280E;
+}
+
+.section-thanks__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30vw;
+    padding-inline: 5vw;
+    padding-top: 30vw;
+}
+
+.section-thanks__title{
+    font-weight: 500;
+    letter-spacing: 0.6vw;
+    font-size: clamp(0.1rem, 10vw, 10vw);
+}
+
+.section-thanks__subtitle{
+    font-weight: 400;
+    font-size: clamp(0.1rem, 6vw, 6vw);
+}
+
+.section-thanks__instagram-button{
+    font-size: clamp(0.1rem, 20vw, 20vw);
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}

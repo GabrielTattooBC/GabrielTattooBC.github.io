@@ -80,12 +80,10 @@ function validateContainer4Checkboxes() {
 
     numberInput.addEventListener('input', function () {
         AdjustEmailSubject();
-        console.log(emailSubject.value);
     });
 
     nameInput.addEventListener('input', function () {
         AdjustEmailSubject();
-        console.log(emailSubject.value);
     });
 
 }
