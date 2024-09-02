@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const updateIndicators = () => {
             const scrollLeft = grid.scrollLeft;
             const viewportWidth = grid.clientWidth;
-            
+
             let currentIndex = Math.round(scrollLeft / viewportWidth);
 
             // Limitar o índice ao número de imagens
@@ -47,26 +47,47 @@ function validateContainer4Checkboxes() {
 
     function updateRequiredAttributes() {
         if (isAnyCheckboxChecked()) {
-            container4Checkboxes.forEach(function(checkbox) {
+            container4Checkboxes.forEach(function (checkbox) {
                 checkbox.removeAttribute('required');
             });
         } else {
-            container4Checkboxes.forEach(function(checkbox) {
+            container4Checkboxes.forEach(function (checkbox) {
                 checkbox.setAttribute('required', 'required');
             });
         }
     }
 
     function isAnyCheckboxChecked() {
-        return Array.from(container4Checkboxes).some(function(checkbox) {
+        return Array.from(container4Checkboxes).some(function (checkbox) {
             return checkbox.checked;
         });
     }
 
     updateRequiredAttributes();
 
-    container4Checkboxes.forEach(function(checkbox) {
+    container4Checkboxes.forEach(function (checkbox) {
         checkbox.addEventListener('change', updateRequiredAttributes);
     });
+
+    const nameInput = document.getElementById('form-name');
+    const numberInput = document.getElementById('form-number');
+    const emailSubject = document.getElementById('form-email-subject');
+
+    function AdjustEmailSubject()
+    {
+        emailSubject.value = nameInput.value + " - " +  numberInput.value;
+    }
+
+    numberInput.addEventListener('input', function () {
+        AdjustEmailSubject();
+        console.log(emailSubject.value);
+    });
+
+    nameInput.addEventListener('input', function () {
+        AdjustEmailSubject();
+        console.log(emailSubject.value);
+    });
+
 }
+
 
